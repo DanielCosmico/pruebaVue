@@ -1,5 +1,5 @@
 <template>
-  <v-card   outlined>
+  <v-card outlined class="pa-5">
     <v-container fluid class="my-5">
         <v-layout row wrap >
             <v-flex xs12 md6>

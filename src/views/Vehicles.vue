@@ -1,18 +1,31 @@
 <template>
   
-  <v-container fluid class="my-5">
-    <v-layout row wrap class="pa-10">
-      <v-flex xs12 md9 class="pa-7">
+  <v-container fluid>
+    <v-layout row wrap class="pa-5">
+      <v-flex xs12 md9 class="pa-5">
         <barra-dash />
         <v-data-table
             :headers="headers"
             :items="vehicles"
             :items-per-page="8"
-            class="elevation-1"
-        ></v-data-table>
+            class="elevation-1">
+        </v-data-table>
       </v-flex>
       <v-flex xs12 md3 class="pa-7">
         <lateral />
+        <div class="text-right pt-7">
+          <v-btn
+            elevation="2"
+            icon
+            x-large>
+
+              <v-icon
+                dark>
+                  mdi-plus
+              </v-icon>
+          </v-btn>
+        </div>
+        
       </v-flex>
     </v-layout>
   </v-container>

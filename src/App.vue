@@ -2,8 +2,8 @@
   <v-app id="inspire">
     <v-navigation-drawer
       v-model="drawer"
-      app
-    >
+      app>
+
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -19,14 +19,14 @@
 
       <v-list
         dense
-        nav
-      >
+        nav>
+
         <v-list-item
           v-for="item in items"
           :key="item.title"
           :to="item.to"
-          link
-        >
+          link>
+          
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -41,7 +41,14 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Velocity</v-toolbar-title>
+      <v-toolbar-title> 
+        <v-img
+          left
+          :src="require('./assets/Base_Logo.png')"
+          class="my-3"
+          contain
+        />
+      </v-toolbar-title>
     </v-app-bar>
 
     <v-main>

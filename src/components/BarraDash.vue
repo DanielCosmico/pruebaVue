@@ -1,37 +1,36 @@
 <template>
   <div class="dashboard">
     <v-container fluid class="my-5">
-      
-      <v-card flat>
-        <v-layout row wrap class="pa-3">
-          <v-flex xs12 md10>
-            <h1 class="subheading grey--text">Vehicles Dashboard</h1>
-          </v-flex>
-          
-          <v-flex xs12 md2>
-            
+
+      <v-row class="text-left">
+
+          <v-col cols='10'>
+            <v-row>
+              <h1>Vehicles Dashboard</h1>
+              <p class="ml-3 mt-4" > 1192 total</p>
+            </v-row>
+              
+          </v-col>
+
+          <v-col cols='2'>  
             <v-btn
                 :loading="loading3"
                 :disabled="loading3"
                 color="blue-grey"
                 class="ma-2 white--text"
-                @click="loader = 'loading3'"
-            >
+                @click="loader = 'loading3'">
                 <v-icon
                     left
-                    dark
-                >
+                    dark>
                     mdi-plus
                 </v-icon>
-                Filter List
-                
+                Filter List  
             </v-btn>
-          </v-flex>
-        </v-layout>
-      </v-card>
+          </v-col>
+
+      </v-row >
 
     </v-container>
-   
   </div>
 </template>
 
