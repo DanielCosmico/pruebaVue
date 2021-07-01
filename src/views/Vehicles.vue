@@ -1,6 +1,6 @@
 <template>
   
-  <v-container fluid>
+  <v-container fluid class="aber">
     <v-layout row wrap class="pa-5">
       <v-flex xs12 md9 class="pa-5">
         <barra-dash />
@@ -15,14 +15,15 @@
         <lateral />
         <div class="text-right pt-7">
           <v-btn
-            elevation="2"
-            icon
-            x-large>
-
-              <v-icon
-                dark>
-                  mdi-plus
-              </v-icon>
+            class="mx-2"
+            fab
+            dark
+            small
+            color="primary"
+          >
+            <v-icon dark>
+              mdi-plus
+            </v-icon>
           </v-btn>
         </div>
         
@@ -40,6 +41,7 @@ import Lateral from '../components/Lateral.vue'
   components: { BarraDash, Lateral },
     data () {
       return {
+        
         headers: [
           {
             text: 'NAME AND ID',
@@ -113,3 +115,4 @@ import Lateral from '../components/Lateral.vue'
     },
   }
 </script>
+

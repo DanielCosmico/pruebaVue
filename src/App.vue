@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" class="aber">
     <v-navigation-drawer
       v-model="drawer"
       app>
@@ -38,7 +38,11 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
+    <v-app-bar app
+      color="white"
+      flat
+    >
+
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title> 
@@ -49,6 +53,11 @@
           contain
         />
       </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-img
+          :src="require('./assets/Group_2.png')"
+          max-width="130"
+      />
     </v-app-bar>
 
     <v-main>
@@ -73,3 +82,11 @@
     }),
   }
 </script>
+
+<style>
+  .aber{
+    width: auto;
+    background-color: #f4f6fc;
+
+  }
+</style>
