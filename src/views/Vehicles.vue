@@ -17,11 +17,10 @@
           <v-btn
             class="mx-2"
             fab
-            dark
-            small
-            color="primary"
+            color="#2e5bff"
+            
           >
-            <v-icon dark>
+            <v-icon color="white" large>
               mdi-plus
             </v-icon>
           </v-btn>
@@ -33,8 +32,8 @@
 </template>
 
 <script>
-import BarraDash from '../components/BarraDash.vue'
-import Lateral from '../components/Lateral.vue'
+  import BarraDash from '../components/BarraDash.vue'
+  import Lateral from '../components/Lateral.vue'
 
 
   export default {

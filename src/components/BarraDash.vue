@@ -16,8 +16,8 @@
             <v-btn
                 :loading="loading3"
                 :disabled="loading3"
-                color="blue-grey"
-                class="ma-2 white--text"
+                color="#2e5bff"
+                class="px-8 white--text"
                 @click="loader = 'loading3'">
                 <v-icon
                     left
